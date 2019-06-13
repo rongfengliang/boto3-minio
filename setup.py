@@ -5,7 +5,7 @@ setuptools.setup(
     author="dalongrong",
     author_email="1141591465@qq.com",
     description="minio app",
-    # install_requires=['boto3'],
+    install_requires=['boto3'],
     long_description_content_type="text/markdown",
     packages=setuptools.find_packages(),
     classifiers=[
