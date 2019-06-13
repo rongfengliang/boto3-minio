@@ -1,0 +1,13 @@
+version: "3"
+services:
+  s3:
+    image: minio/minio
+    command: server /export
+    ports:
+    - "9000:9000"
+    volumes:
+      - ./export:/export
+      - ./config:/root/.minio
+    environment:
+    - "MINIO_ACCESS_KEY=dalongapp"
+    - "MINIO_SECRET_KEY=dalongapp"

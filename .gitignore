@@ -1,0 +1,7 @@
+venv
+export
+config
+.vscode
+minioapp.egg-info
+*.pyc
+__pycache__
