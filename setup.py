@@ -5,7 +5,7 @@ setuptools.setup(
     author="dalongrong",
     author_email="1141591465@qq.com",
     description="minio app",
-    install_requires=['boto3'],
+    install_requires=['boto3','minio'],
     long_description_content_type="text/markdown",
     packages=setuptools.find_packages(),
     classifiers=[
@@ -16,6 +16,7 @@ setuptools.setup(
     entry_points={
         'console_scripts': [
             'minioapp=minioapp.app:main',
+            'minioc=minioapp.minio:main'
         ],
     }
 )
